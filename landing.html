@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CineCapture — Extract Perfect Frames from Any Video</title>
+  <meta name="description" content="CineCapture is a free, browser-based tool to extract high-quality still frames from any video — with scene detection, sharpness analysis, and ZIP export. No uploads, no accounts, no limits." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="lp-body">
+
+  <!-- ══ NAVBAR ══ -->
+  <header class="lp-navbar" id="lp-navbar">
+    <div class="lp-nav-inner">
+      <!-- Brand -->
+      <a href="landing.html" class="lp-nav-brand">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none">
+            <rect x="2" y="6" width="20" height="12" rx="2" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M8 6V4M16 6V4M8 18v2M16 18v2M2 10h2M20 10h2M2 14h2M20 14h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <circle cx="12" cy="12" r="2.5" fill="currentColor" opacity="0.8"/>
+          </svg>
+        </div>
+        <span class="brand-name">CineCapture</span>
+      </a>
+
+      <!-- Desktop nav links -->
+      <nav class="lp-nav-links" id="lp-nav-links" aria-label="Main navigation">
+        <a href="#features" class="lp-nav-link">Features</a>
+        <a href="#how-it-works" class="lp-nav-link">How It Works</a>
+        <a href="#faq" class="lp-nav-link">FAQ</a>
+        <a href="index.html" class="lp-nav-cta">Open App</a>
+      </nav>
+
+      <!-- Hamburger -->
+      <button class="lp-hamburger" id="lp-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="lp-mobile-menu" id="lp-mobile-menu" aria-hidden="true">
+      <a href="#features" class="lp-mobile-link">Features</a>
+      <a href="#how-it-works" class="lp-mobile-link">How It Works</a>
+      <a href="#faq" class="lp-mobile-link">FAQ</a>
+      <a href="index.html" class="lp-mobile-cta">Open App →</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ══ HERO ══ -->
+    <section class="lp-hero" id="hero">
+      <div class="lp-hero-bg" aria-hidden="true">
+        <!-- Decorative orbs -->
+        <div class="lp-orb lp-orb-1"></div>
+        <div class="lp-orb lp-orb-2"></div>
+        <div class="lp-orb lp-orb-3"></div>
+        <!-- Grid overlay -->
+        <div class="lp-grid-overlay"></div>
+      </div>
+
+      <div class="lp-container lp-hero-inner">
+        <!-- Copy -->
+        <div class="lp-hero-copy">
+          <div class="lp-hero-badge">
+            <span class="lp-badge-dot"></span>
+            Free · No signup · 100% local
+          </div>
+
+          <h1 class="lp-hero-h1">
+            Extract <span class="lp-gradient-text">Perfect Frames</span><br />
+            from Any Video
+          </h1>
+
+          <p class="lp-hero-sub">
+            CineCapture is a free, browser-based tool to extract high-quality still frames from
+            any video — with scene detection, sharpness analysis, and ZIP export.
+            No uploads, no accounts, no limits.
+          </p>
+
+          <div class="lp-hero-actions">
+            <a href="index.html" class="lp-btn-primary">
+              Start Extracting
+              <svg viewBox="0 0 16 16" fill="none" width="16" height="16">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#how-it-works" class="lp-btn-ghost">
+              See how it works
+              <svg viewBox="0 0 16 16" fill="none" width="16" height="16">
+                <path d="M8 3v10M4 9l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Trust chips -->
+          <div class="lp-trust-chips">
+            <span class="lp-trust-chip"><span class="lp-chip-dot green"></span>Canvas API · No servers</span>
+            <span class="lp-trust-chip"><span class="lp-chip-dot blue"></span>MP4 · WebM · MOV · AVI · MKV</span>
+            <span class="lp-trust-chip"><span class="lp-chip-dot cyan"></span>JPG · PNG · ZIP export</span>
+          </div>
+        </div>
+
+        <!-- Hero visual mock -->
+        <div class="lp-hero-visual" aria-hidden="true">
+          <div class="lp-mock-card">
+            <!-- Mock titlebar -->
+            <div class="lp-mock-bar">
+              <div class="lp-mock-dots">
+                <span class="lp-dot red"></span>
+                <span class="lp-dot yellow"></span>
+                <span class="lp-dot green"></span>
+              </div>
+              <div class="lp-mock-title-bar">
+                <div class="lp-mock-pill"></div>
+                <div class="lp-mock-pill lp-mock-pill-sm"></div>
+              </div>
+            </div>
+
+            <!-- Mock app area -->
+            <div class="lp-mock-body">
+              <!-- Mini nav strip -->
+              <div class="lp-mock-nav">
+                <div class="lp-mock-step lp-mock-step-active"></div>
+                <div class="lp-mock-step-line"></div>
+                <div class="lp-mock-step"></div>
+                <div class="lp-mock-step-line"></div>
+                <div class="lp-mock-step"></div>
+                <div class="lp-mock-step-line"></div>
+                <div class="lp-mock-step"></div>
+              </div>
+
+              <!-- Frame grid -->
+              <div class="lp-mock-grid">
+                <div class="lp-mock-frame lp-frame-indigo">
+                  <div class="lp-frame-shimmer"></div>
+                  <span class="lp-frame-label">001</span>
+                </div>
+                <div class="lp-mock-frame lp-frame-cyan">
+                  <div class="lp-frame-shimmer"></div>
+                  <span class="lp-frame-label">002</span>
+                </div>
+                <div class="lp-mock-frame lp-frame-purple">
+                  <div class="lp-frame-shimmer"></div>
+                  <span class="lp-frame-label">003</span>
+                </div>
+                <div class="lp-mock-frame lp-frame-green">
+                  <div class="lp-frame-shimmer"></div>
+                  <span class="lp-frame-label">004</span>
+                </div>
+                <div class="lp-mock-frame lp-frame-amber">
+                  <div class="lp-frame-shimmer"></div>
+                  <span class="lp-frame-label">005</span>
+                </div>
+                <div class="lp-mock-frame lp-frame-indigo">
+                  <div class="lp-frame-shimmer"></div>
+                  <span class="lp-frame-label">006</span>
+                </div>
+              </div>
+
+              <!-- Mock toolbar -->
+              <div class="lp-mock-toolbar">
+                <div class="lp-mock-btn-primary"></div>
+                <div class="lp-mock-btn-ghost"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating labels -->
+          <div class="lp-float-badge lp-float-top">
+            <svg viewBox="0 0 12 12" fill="none" width="10" height="10">
+              <circle cx="6" cy="6" r="4" fill="none" stroke="#34d399" stroke-width="1.5"/>
+              <circle cx="6" cy="6" r="1.5" fill="#34d399"/>
+            </svg>
+            Scene detected
+          </div>
+          <div class="lp-float-badge lp-float-bottom">
+            <svg viewBox="0 0 12 12" fill="currentColor" width="10" height="10">
+              <path d="M6 1l1.2 2.5L10 4l-2 2 .5 2.8L6 7.5 3.5 8.8 4 6 2 4l2.8-.5L6 1z"/>
+            </svg>
+            Sharpness: 94/100
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ FEATURES ══ -->
+    <section class="lp-section" id="features">
+      <div class="lp-container">
+        <div class="lp-section-header">
+          <p class="lp-section-eyebrow">Capabilities</p>
+          <h2 class="lp-section-h2">Everything you need.<br />Nothing you don't.</h2>
+          <p class="lp-section-desc">All processing runs in your browser using the Canvas and Web APIs. Fast, private, and free.</p>
+        </div>
+
+        <div class="lp-features-grid">
+
+          <div class="lp-feat-card">
+            <div class="lp-feat-icon lp-feat-icon-green">🔒</div>
+            <h3 class="lp-feat-title">100% Private</h3>
+            <p class="lp-feat-desc">Everything runs in your browser. No uploads, no servers, no tracking. Your video never leaves your device.</p>
+          </div>
+
+          <div class="lp-feat-card">
+            <div class="lp-feat-icon lp-feat-icon-indigo">⚡</div>
+            <h3 class="lp-feat-title">Three Extraction Modes</h3>
+            <p class="lp-feat-desc">Every N-th frame, time range with custom interval, or smart scene detection — pick the mode that fits your workflow.</p>
+          </div>
+
+          <div class="lp-feat-card">
+            <div class="lp-feat-icon lp-feat-icon-cyan">🎨</div>
+            <h3 class="lp-feat-title">CV-Powered Analysis</h3>
+            <p class="lp-feat-desc">Sharpness scoring, blur detection, brightness analysis, and Sobel edge maps power our intelligent frame filtering.</p>
+          </div>
+
+          <div class="lp-feat-card">
+            <div class="lp-feat-icon lp-feat-icon-amber">📦</div>
+            <h3 class="lp-feat-title">ZIP Export</h3>
+            <p class="lp-feat-desc">Download all extracted frames in one click as a single ZIP archive, or grab individual frames on demand.</p>
+          </div>
+
+          <div class="lp-feat-card">
+            <div class="lp-feat-icon lp-feat-icon-purple">🎞️</div>
+            <h3 class="lp-feat-title">Multiple Formats</h3>
+            <p class="lp-feat-desc">Export frames as JPG (compressed, smaller file size) or PNG (lossless quality) with adjustable compression level.</p>
+          </div>
+
+          <div class="lp-feat-card">
+            <div class="lp-feat-icon lp-feat-icon-rose">🔬</div>
+            <h3 class="lp-feat-title">Edge View</h3>
+            <p class="lp-feat-desc">Toggle between the original frame and its Sobel edge map directly in the gallery to inspect sharpness visually.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ HOW IT WORKS ══ -->
+    <section class="lp-section lp-section-alt" id="how-it-works">
+      <div class="lp-container">
+        <div class="lp-section-header">
+          <p class="lp-section-eyebrow">Process</p>
+          <h2 class="lp-section-h2">Four steps to your frames.</h2>
+          <p class="lp-section-desc">From raw video to a full gallery of extracted frames in under a minute.</p>
+        </div>
+
+        <div class="lp-steps-wrap">
+          <!-- Connecting line (desktop only) -->
+          <div class="lp-steps-line" aria-hidden="true"></div>
+
+          <div class="lp-steps-grid">
+
+            <div class="lp-step">
+              <div class="lp-step-num-wrap">
+                <div class="lp-step-num">1</div>
+              </div>
+              <div class="lp-step-body">
+                <div class="lp-step-icon">
+                  <svg viewBox="0 0 24 24" fill="none" width="22" height="22">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    <polyline points="17 8 12 3 7 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <line x1="12" y1="3" x2="12" y2="15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <h3 class="lp-step-title">Import</h3>
+                <p class="lp-step-desc">Drop or browse any video file — MP4, WebM, MOV, AVI, MKV, or any format your browser supports natively.</p>
+              </div>
+            </div>
+
+            <div class="lp-step">
+              <div class="lp-step-num-wrap">
+                <div class="lp-step-num">2</div>
+              </div>
+              <div class="lp-step-body">
+                <div class="lp-step-icon">
+                  <svg viewBox="0 0 24 24" fill="none" width="22" height="22">
+                    <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/>
+                    <path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.8"/>
+                  </svg>
+                </div>
+                <h3 class="lp-step-title">Preview</h3>
+                <p class="lp-step-desc">Scrub through the video timeline, check resolution, duration, and estimated frame count before extracting.</p>
+              </div>
+            </div>
+
+            <div class="lp-step">
+              <div class="lp-step-num-wrap">
+                <div class="lp-step-num">3</div>
+              </div>
+              <div class="lp-step-body">
+                <div class="lp-step-icon">
+                  <svg viewBox="0 0 24 24" fill="none" width="22" height="22">
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.8"/>
+                    <path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <h3 class="lp-step-title">Configure</h3>
+                <p class="lp-step-desc">Choose extraction mode, output format (JPG/PNG), quality level, CV filters, and sharpness thresholds.</p>
+              </div>
+            </div>
+
+            <div class="lp-step">
+              <div class="lp-step-num-wrap">
+                <div class="lp-step-num">4</div>
+              </div>
+              <div class="lp-step-body">
+                <div class="lp-step-icon">
+                  <svg viewBox="0 0 24 24" fill="none" width="22" height="22">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    <polyline points="7 10 12 15 17 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <h3 class="lp-step-title">Export</h3>
+                <p class="lp-step-desc">Browse the extracted frame gallery, inspect CV analysis stats, then download individually or as a single ZIP.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ FAQ ══ -->
+    <section class="lp-section" id="faq">
+      <div class="lp-container lp-faq-container">
+        <div class="lp-section-header">
+          <p class="lp-section-eyebrow">FAQ</p>
+          <h2 class="lp-section-h2">Common questions.</h2>
+        </div>
+
+        <div class="lp-accordion" id="lp-accordion">
+
+          <div class="lp-acc-item" data-open="false">
+            <button class="lp-acc-trigger" aria-expanded="false">
+              <span>Is my video uploaded anywhere?</span>
+              <svg class="lp-acc-arrow" viewBox="0 0 16 16" fill="none" width="16" height="16">
+                <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="lp-acc-body">
+              <p>No. All processing happens directly in your browser using the Canvas API. Your video file is read locally and never transmitted to any server. Nothing leaves your device — not the video, not the extracted frames, not any metadata.</p>
+            </div>
+          </div>
+
+          <div class="lp-acc-item" data-open="false">
+            <button class="lp-acc-trigger" aria-expanded="false">
+              <span>What video formats are supported?</span>
+              <svg class="lp-acc-arrow" viewBox="0 0 16 16" fill="none" width="16" height="16">
+                <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="lp-acc-body">
+              <p>MP4, WebM, MOV, AVI, MKV, and any other format your browser supports natively. Modern browsers handle most common codecs including H.264, H.265/HEVC (where supported), VP8, VP9, and AV1. If your browser can play it, CineCapture can extract from it.</p>
+            </div>
+          </div>
+
+          <div class="lp-acc-item" data-open="false">
+            <button class="lp-acc-trigger" aria-expanded="false">
+              <span>Can I extract thousands of frames?</span>
+              <svg class="lp-acc-arrow" viewBox="0 0 16 16" fill="none" width="16" height="16">
+                <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="lp-acc-body">
+              <p>Yes, but extracting all frames from a long video may take several minutes depending on resolution and your device's performance. For faster results, use the Every N-th frame or Time Range modes to limit the number of extracted frames. The scene detection (Keyframes) mode is often the best balance of coverage and speed.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ FINAL CTA ══ -->
+    <section class="lp-section lp-cta-section">
+      <div class="lp-container">
+        <div class="lp-cta-card">
+          <div class="lp-cta-glow" aria-hidden="true"></div>
+          <div class="lp-cta-inner">
+            <h2 class="lp-cta-h2">Ready to extract frames?</h2>
+            <p class="lp-cta-desc">Open CineCapture directly in your browser. No install, no account, no waiting.</p>
+            <a href="index.html" class="lp-btn-primary lp-btn-lg">
+              Open CineCapture
+              <svg viewBox="0 0 16 16" fill="none" width="16" height="16">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="lp-footer">
+    <div class="lp-container lp-footer-inner">
+      <div class="lp-footer-brand">
+        <div class="brand-icon lp-footer-icon">
+          <svg viewBox="0 0 24 24" fill="none">
+            <rect x="2" y="6" width="20" height="12" rx="2" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M8 6V4M16 6V4M8 18v2M16 18v2M2 10h2M20 10h2M2 14h2M20 14h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <circle cx="12" cy="12" r="2.5" fill="currentColor" opacity="0.8"/>
+          </svg>
+        </div>
+        <div>
+          <div class="brand-name">CineCapture</div>
+          <div class="lp-footer-tagline">Browser-based video frame extractor</div>
+        </div>
+      </div>
+      <p class="lp-footer-note">All processing runs locally in your browser. Nothing is uploaded.</p>
+    </div>
+  </footer>
+
+  <!-- ══ INLINE SCRIPTS ══ -->
+  <script>
+    /* ── Hamburger toggle ── */
+    const hamburger = document.getElementById('lp-hamburger');
+    const mobileMenu = document.getElementById('lp-mobile-menu');
+    hamburger.addEventListener('click', () => {
+      const open = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', String(!open));
+      hamburger.classList.toggle('is-open', !open);
+      mobileMenu.classList.toggle('is-open', !open);
+      mobileMenu.setAttribute('aria-hidden', String(open));
+    });
+
+    /* Close mobile menu when a link is clicked */
+    mobileMenu.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.classList.remove('is-open');
+        mobileMenu.classList.remove('is-open');
+        mobileMenu.setAttribute('aria-hidden', 'true');
+      });
+    });
+
+    /* ── Navbar scroll shadow ── */
+    const navbar = document.getElementById('lp-navbar');
+    const onScroll = () => navbar.classList.toggle('scrolled', window.scrollY > 20);
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    /* ── Active nav link on scroll (IntersectionObserver) ── */
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.lp-nav-link[href^="#"]');
+    const observerOpts = { rootMargin: '-30% 0px -60% 0px' };
+    const sectionObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = '#' + entry.target.id;
+          navLinks.forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href') === id);
+          });
+        }
+      });
+    }, observerOpts);
+    sections.forEach(s => sectionObserver.observe(s));
+
+    /* ── FAQ Accordion ── */
+    const accItems = document.querySelectorAll('.lp-acc-item');
+    accItems.forEach(item => {
+      const trigger = item.querySelector('.lp-acc-trigger');
+      trigger.addEventListener('click', () => {
+        const isOpen = item.getAttribute('data-open') === 'true';
+        /* Close all */
+        accItems.forEach(i => {
+          i.setAttribute('data-open', 'false');
+          i.querySelector('.lp-acc-trigger').setAttribute('aria-expanded', 'false');
+        });
+        /* Toggle clicked */
+        if (!isOpen) {
+          item.setAttribute('data-open', 'true');
+          trigger.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
+
